@@ -12,13 +12,13 @@ int main(void)
 {
 	int num = 48;
 
-	while (num < 57)
+	while (num < 58)
 	{
 		putchar(num);
-		putchar(', ');
+		putchar(',');
+		putchar(' ');
 		num += 1;
 	}
-	putchar(num);
 	putchar('\n');
 	return (0);
 }
