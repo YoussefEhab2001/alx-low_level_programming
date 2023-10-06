@@ -10,18 +10,18 @@
  */
 int main(void)
 {
-        char letter = 'a';
+	char letter = 'a';
 
-        while (letter != ('z' + 1))
-        {
-                if (letter == 'q' || letter == 'e')
-                {
-                    letter += 1;
-                    continue;
-                }
-                putchar(letter);
-                letter += 1;
-        }
-        putchar('\n');
-        return (0);
+	while (letter != ('z' + 1))
+	{
+		if (letter == 'q' || letter == 'e')
+		{
+			letter += 1;
+			continue;
+		}
+		putchar(letter);
+		letter += 1;
+	}
+	putchar('\n');
+	return (0);
 }
