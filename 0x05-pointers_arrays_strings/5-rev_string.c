@@ -8,14 +8,14 @@
 void rev_string(char *s)
 {
 	int i, j;
-	char *tmp = malloc(sizeof(s));
+	char tmp;
 
 	for (i = 0; s[i] != 0; i++)
+	{}
+	for (j = 0, i--; i >= 0; j++, i--)
 	{
-		tmp[i] = s[i];
-	}
-	for (j = 0; i >= 0; j++, i--)
-	{
-		s[j] = tmp[i];
+		tmp = s[j];
+		s[j] = s[i];
+		s[i] = tmp;
 	}
 }
